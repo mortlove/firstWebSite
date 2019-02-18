@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Squada One', cursive;
+}
+
+html {
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    width: 100wh;
+    background-color: #b7cff4;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 0;
+
+}
+
+header nav {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 25px;
+    z-index: 3;
+}
+
+header hgroup {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    color: white;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+header h1 {
+    font-weight: 200;
+    font-size: 3.5rem;
+
+}
+
+header h3 {
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+
+
+header img {
+    height: 45%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+
+
+}
+
+#arrow {
+    width: 60px;
+    height: 60px;
+    color: red;
+    border: 0px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    opacity: 0.8;
+    font-size: 25px;
+    text-shadow: 0px 15px 0, 0px 30px 0;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 3;
+    overflow: hidden;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+
+.fa-angle-down {
+    -webkit-animation: arrow 1s 1 linear;
+    animation: arrow 2s infinite linear;
+}
+
+/*#arrow:hover {
+    border: 2px solid red;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0px 15px 0 white, 0px 30px 0 white;
+}*/
+
+
+main {
+    height: 100vh;
+    width: 100wh;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+main div img {
+    display: block;
+    margin: 0 auto;
+    height: 30vh;
+    border-radius: 50%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+section {
+    text-align: center;
+    display: block;
+}
+
+section hgroup {
+    padding-bottom: 30px;
+    color: darksalmon;
+}
+
+
+main section h1 {
+    font-size: 4rem;
+
+}
+
+main section h3 {
+    font-size: 3rem;
+
+}
+
+main section p {
+    font-size: 2rem;
+    color: dimgrey;
+}
+
+color: lightsalmon
+}
+
+section p {
+    text-align: justify;
+    text-indent: 50px;
+    color: lightslategrey;
+    padding: 0 70px;
+}
+
+main ul {
+    text-align: left;
+}
+
+
+
+
+/* MEDIA QUERY*/
+
+@media (orientation: portrait) {
+    header img {
+        height: 100vh;
+    }
+
+    header hgroup {
+        top: 10%;
+        left: 10%;
+        color: white;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+    h3 span::after {
+        content: '\A';
+        white-space: pre;
+        /*enter po spanie w h3 */
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+        width: 100vw;
+        height: 100vh;
+
+
+    }
+
+    header hgroup {
+        top: 15%;
+        left: 10%;
+        color: white;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+
+    header nav {
+        position: absolute;
+        right: 4%;
+        top: 5%;
+    }
+}
+
+@media (min-width: 530px) {
+    header hgroup {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header h3 {
+        font-size: 2.5rem;
+    }
+
+    header nav {
+        font-size: 30px;
+    }
+
+    main div img {
+        height: 40vh;
+    }
+
+    main section h1 {
+        font-size: 3rem;
+    }
+
+    main section h3 {
+        font-size: 2rem;
+    }
+
+    main section p {
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 768px) {
+    header #arrow {
+        font-size: 40px;
+    }
+
+    header hgroup {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -30%);
+        transform: translate(-50%, -30%);
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 7rem;
+    }
+
+    header h3 {
+        font-size: 5rem;
+    }
+
+    header nav {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #arrow {
+        cursor: pointer;
+    }
+
+    header hgroup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+    header h1 {
+        font-size: 6rem;
+    }
+
+    header h3 {
+        font-size: 4rem;
+    }
+
+    header nav {
+        font-size: 70px;
+    }
+}
+
+
+
+
+
+
+/* ANIMATIONS */
+
+@-webkit-keyframes arrow {
+    0% {
+        color: indianred;
+    }
+
+    50% {
+        color: navajowhite;
+    }
+
+    100% {
+        color: indianred;
+    }
+
+    /* 0% {
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    50% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+
+    100% {
+        -webkit-transform: translateY(80px);
+        transform: translateY(80px)
+    }
+    Fajna animacja na text shadow :D
+    */
+}
