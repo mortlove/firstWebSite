@@ -40,7 +40,7 @@ header hgroup {
 header h1 {
     font-weight: 200;
     font-size: 3.5rem;
-
+    color: coral;
 }
 
 header h3 {
@@ -83,7 +83,7 @@ header img {
 
 
 .fa-angle-down {
-    -webkit-animation: arrow 1s 1 linear;
+    -webkit-animation: arrow 2s infinite linear;
     animation: arrow 2s infinite linear;
 }
 
@@ -98,7 +98,7 @@ header img {
 main {
     height: 100vh;
     width: 100wh;
-    background-color: white;
+    background: #7d7978;
     position: relative;
     overflow-x: hidden;
     z-index: 0;
@@ -113,12 +113,12 @@ main div img {
     padding-top: 20px;
 }
 
-section {
+main section {
     text-align: center;
     display: block;
 }
 
-section hgroup {
+main section hgroup {
     padding-bottom: 30px;
     color: darksalmon;
 }
@@ -137,20 +137,16 @@ main section h3 {
 main section p {
     font-size: 2rem;
     color: dimgrey;
-}
-
-color: lightsalmon
-}
-
-section p {
+    color: lightsalmon;
     text-align: justify;
     text-indent: 50px;
-    color: lightslategrey;
+    color: antiquewhite;
     padding: 0 70px;
 }
 
-main ul {
+main ul li {
     text-align: left;
+    list-style-type: disc;
 }
 
 
@@ -202,9 +198,63 @@ main ul {
     }
 }
 
-@media (min-width: 530px) {
+@media (max-width: 300px) {
+    header #arrow {
+        font-size: 35px;
+    }
+
+    header hgroup {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header h3 {
+        font-size: 2.5rem;
+    }
+
+    header nav {
+        font-size: 30px;
+    }
+
+    main div img {
+        height: 30vh;
+    }
+
+    main section {
+        text-align: justify;
+    }
+
+    main section hgroup {
+        text-align: center;
+    }
+
+    main section h1 {
+        font-size: 2.5rem;
+    }
+
+    main section h3 {
+        font-size: 2rem;
+    }
+
+    main section p {
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 301px) {
     header hgroup {
         text-align: center;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 
     header h1 {
@@ -232,7 +282,7 @@ main ul {
     }
 
     main section p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing: 0.5px;
         line-height: 1.5;
     }
@@ -253,6 +303,52 @@ main ul {
     }
 
     header h1 {
+        font-size: 5rem;
+    }
+
+    header h3 {
+        font-size: 3.5rem;
+    }
+
+    main div img {
+        height: 40vh;
+    }
+
+    main section h1 {
+        font-size: 5rem;
+    }
+
+    main section h3 {
+        font-size: 3rem;
+    }
+
+    main section p {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 1024px) {
+    #arrow {
+        cursor: pointer;
+    }
+
+    main div img {
+        height: 30vh;
+    }
+
+    header hgroup {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -30%);
+        transform: translate(-50%, -30%);
+        text-align: center;
+
+    }
+
+    header h1 {
         font-size: 7rem;
     }
 
@@ -260,9 +356,18 @@ main ul {
         font-size: 5rem;
     }
 
-    header nav {
-        font-size: 50px;
+    main section h1 {
+        font-size: 6rem;
     }
+
+    main section h3 {
+        font-size: 4.5rem;
+    }
+
+    main section p {
+        font-size: 4rem;
+    }
+
 }
 
 @media (min-width: 1280px) {
@@ -270,12 +375,16 @@ main ul {
         cursor: pointer;
     }
 
+    main div img {
+        height: 30vh;
+    }
+
     header hgroup {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -30%);
+        transform: translate(-50%, -30%);
         text-align: center;
 
     }
@@ -291,6 +400,19 @@ main ul {
     header nav {
         font-size: 70px;
     }
+
+    main section h1 {
+        font-size: 5rem;
+    }
+
+    main section h3 {
+        font-size: 3.5rem;
+    }
+
+    main section p {
+        font-size: 2.5rem;
+    }
+
 }
 
 
