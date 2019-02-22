@@ -9,3 +9,11 @@ $("#arrow").on("click", function () {
         scrollTop: $("main").offset().top
     }, 1000)
 })
+
+var $button = $("button");
+var $off = $("header").offset().top;
+$("button").on("click", function () {
+    $("body, html").animate({
+        scrollTop: $("header").offset().top
+    }, 1000)
+})
